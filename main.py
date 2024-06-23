@@ -40,12 +40,3 @@ if submit:  # 如果所有输入都有效
     st.write(script)  # 输出生成的脚本
     with st.expander("维基百科搜索结果 👀"):  # 折叠框，显示维基百科搜索结果
         st.info(search_result)  # 输出维基百科搜索结果
-
-
-if "a" not in st.session_state:
-    st.session_state.a = 0
-clicked = st.button("加1")
-if clicked:
-    st.session_state.a += 1
-st.write(st.session_state.a)
-print(st.session_state)
